@@ -17,7 +17,7 @@ public class FraudServcieImp implements FraudServcie {
         fraudRepo.save(
                 FraudCheckHistory.builder()
                         .customerId(customerId)
-                        .isFraud(true)
+                        .isFraud(false)
                         .createdAT(LocalDateTime.now())
                         .build()
         );

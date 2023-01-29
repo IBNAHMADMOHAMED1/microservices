@@ -12,6 +12,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Builder
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
