@@ -29,8 +29,6 @@ public class CustomerServiceImp implements CustomerService {
               fraudUrl + "/fraud-check/" + customer.getId(),
                 FraudCheckResponse.class
         );
-
-
         if (fraudCheckResponse != null && fraudCheckResponse.getIsFraud()) {
             throw new IllegalStateException("Fraud check failed");
         }
